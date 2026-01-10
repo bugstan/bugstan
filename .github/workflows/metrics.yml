@@ -25,7 +25,6 @@ jobs:
           base: header, repositories
           filename: github-stats.svg
           config_timezone: Asia/Shanghai
-          config_display: large
           # Plugins for visual density (Charts/Graphs)
           plugin_lines: yes
           plugin_habits: yes
@@ -73,7 +72,6 @@ jobs:
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
           config_theme: radical
-          config_display: large
           extras_css: |
             svg { background: transparent !important; }
             section, .items-wrapper { border: none !important; background: transparent !important; }
