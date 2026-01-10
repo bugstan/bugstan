@@ -31,28 +31,8 @@
 
 ---
 
-### 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/WPF-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-</p>
-
----
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=bugstan&color=blueviolet&style=flat-square&label=Profile+Views" />
 </p>
-
----
-
-> [!IMPORTANT]
-> **Action Powered**: This profile uses **GitHub Actions** to fetch stats (including private ones) and generate static files.
-> 1. Ensure `METRICS_TOKEN` is set in Repository Secrets.
-> 2. Images will appear after the first successful Action run.
 
 
