@@ -22,13 +22,13 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: bugstan
           template: classic
-          base: header, repositories
+          base: header
           filename: github-stats.svg
           config_timezone: Asia/Shanghai
-          # 核心：统计组织内的项目
+          # 只统计 Star，不显示杂乱的仓库列表
           plugin_repositories: yes
           plugin_repositories_affiliations: owner, collaborator, organization_member
-          # 美化：匹配 Radical 配色
+          # 美化：去除边框，放大文字
           config_theme: dark
           extras_css: |
             :root {
@@ -36,9 +36,23 @@ jobs:
               --color-fg-default: #a9fef7;
               --color-accent-fg: #fe428e;
             }
-            .header, h2 { color: #fe428e !important; }
-            .field svg { fill: #fe428e !important; }
-            section { border: 1px solid #fe428e; border-radius: 6px; padding: 10px; }
+            /* 彻底移除表格框和背景分区 */
+            section, .items-wrapper, .header { 
+              border: none !important; 
+              background: transparent !important; 
+              box-shadow: none !important;
+            }
+            .header, h2 { 
+              color: #fe428e !important; 
+              font-size: 24px !important; 
+            }
+            .field { 
+              font-size: 16px !important; 
+              margin-bottom: 8px !important; 
+            }
+            .field svg { fill: #fe428e !important; transform: scale(1.2); }
+            /* 全局隐藏不需要显示的板块 */
+            #metrics-end, .featured-repositories { display: none !important; }
 
       - name: Top Languages Card
         uses: readme-tools/github-readme-stats-action@v1

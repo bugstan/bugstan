@@ -5,9 +5,9 @@
 ### 📊 GitHub Statistics (Including Private Repos)
 
 <p align="center">
-  <!-- These cards are pixel-perfect and support private stats via GitHub Actions -->
-  <img src="github-stats.svg" height="195" alt="bugstan's GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bugstan&theme=radical&hide_border=true&v=25" height="195" alt="GitHub Streak" />
+  <!-- 移除高度限制或增加高度，使 Metrics 卡片不再显得缩水 -->
+  <img src="github-stats.svg" height="250" alt="bugstan's GitHub stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bugstan&theme=radical&hide_border=true&v=35" height="250" alt="GitHub Streak" />
 </p>
 
 ---
