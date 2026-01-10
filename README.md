@@ -4,40 +4,11 @@
 
 ---
 
-## 📊 GitHub Stats
+## 📊 Performance & Statistics
 
+<!-- This image is generated automatically by GitHub Actions every 12 hours -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bugstan&show_icons=true&theme=dark&include_all_commits=true&count_private=true&v=10" alt="bugstan's GitHub stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bugstan&theme=dark&hide_border=true&v=10" alt="GitHub Streak" />
-</p>
-
----
-
-## 🏆 Language Distribution
-
-<p align="center">
-  <!-- 尝试使用不同的主题和参数强制刷新 -->
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=bugstan&theme=github_dark&v=10" alt="Language Radar" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=bugstan&theme=github_dark&v=10" alt="Commit Languages" />
-</p>
-
----
-
-## 🔥 Activity Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bugstan&theme=github-dark&hide_border=true&area=true&v=10" alt="Activity Graph" />
-</p>
-
----
-
-## 🏅 Achievements
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=bugstan&theme=darkhub&no-frame=true&column=7&v=10" alt="Trophies" />
+  <img src="github-metrics.svg" alt="Metrics" width="100%">
 </p>
 
 ---
@@ -57,4 +28,12 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=bugstan&color=blueviolet&style=flat-square&label=Profile+Views" />
 </p>
+
+---
+
+> [!IMPORTANT]
+> **Setup Required**: This profile uses GitHub Actions to generate live stats. 
+> 1. Generate a [Personal Access Token (classic)](https://github.com/settings/tokens) with `repo` and `user` scopes.
+> 2. Add it to this repository's **Settings > Secrets and variables > Actions** as `METRICS_TOKEN`.
+
 
