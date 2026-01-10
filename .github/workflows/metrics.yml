@@ -22,30 +22,13 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: bugstan
           template: classic
-          base: header, repositories
+          base: header, repositories, metadata
           filename: github-stats.svg
           config_timezone: Asia/Shanghai
           # Enable repository plugin for org star aggregation
           plugin_repositories: yes
           plugin_repositories_affiliations: owner, collaborator, organization_member
-          config_theme: dark
-          extras_css: |
-            :root {
-              --color-canvas-default: #141321;
-              --color-fg-default: #a9fef7;
-              --color-accent-fg: #fe428e;
-            }
-            svg { background: transparent !important; }
-            /* Hide the actual list of repositories but keep the stats in the header */
-            .repositories { display: none !important; }
-            section, .items-wrapper, .header { 
-              border: none !important; 
-              background: transparent !important; 
-              box-shadow: none !important;
-            }
-            .header, h2 { color: #fe428e !important; }
-            .field svg { fill: #fe428e !important; }
-            #metrics-end { display: none !important; }
+          config_theme: radical
 
       - name: Top Languages Card
         uses: readme-tools/github-readme-stats-action@v1
