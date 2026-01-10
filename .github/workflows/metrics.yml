@@ -1,4 +1,4 @@
-name: Generate High Aesthetic Cards
+name: Generate Aesthetic Cards
 
 on:
   schedule: [{cron: "0 */12 * * *"}]
@@ -15,7 +15,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           include_all_commits: true
-          # 使用你喜欢的 radical 主题
+          # 依然使用你最喜欢的 radical 配色
           theme: radical
       - name: Commit & Push
         run: |
