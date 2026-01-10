@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: bugstan
           template: classic
-          base: header, repositories
+          base: header, repositories, activity, community, metadata
           filename: github-stats.svg
           config_timezone: Asia/Shanghai
           # Plugins for visual density (Charts/Graphs)
@@ -41,8 +41,8 @@ jobs:
               --color-accent-fg: #fe428e;
             }
             svg { background: transparent !important; }
-            /* Force visibility of content while hiding the repo list */
-            .repositories { display: none !important; }
+            /* Hide repository lists and messy sections but keep the stats active */
+            .repositories, .activity, .community, .metadata { display: none !important; }
             section, .items-wrapper, .header { 
               border: none !important; 
               background: transparent !important; 
