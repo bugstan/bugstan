@@ -19,15 +19,12 @@
 
 ---
 
-### 🔥 Live Activity Graph
+### 📈 Contribution Graph
 
 <p align="center">
-  <!-- 切换为 react 主题，它是更符合 GitHub 风格的深色背景，不再刺眼 -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bugstan&theme=react&hide_border=true&area=true&v=30" width="100%" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bugstan&theme=react&hide_border=true" width="100%" alt="Activity Graph" />
 </p>
 
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=bugstan&color=blueviolet&style=flat-square&label=Profile+Views" />
+<p align="right">
+  <img src="https://komarev.com/ghpvc/?username=bugstan&color=fe428e&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
 </p>
