@@ -7,8 +7,9 @@
 ### 📊 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bugstan&show_icons=true&theme=radical&include_all_commits=true&count_private=true&v=12" height="195" alt="bugstan's GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bugstan&theme=radical&hide_border=true&v=12" height="195" alt="GitHub Streak" />
+  <!-- 使用更稳定的镜像源来解决 503 问题 -->
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bugstan&show_icons=true&theme=radical&include_all_commits=true&count_private=true&v=14" height="195" alt="bugstan's GitHub stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bugstan&theme=radical&hide_border=true&v=14" height="195" alt="GitHub Streak" />
 </p>
 
 ---
@@ -16,8 +17,8 @@
 ### 🏆 Language & Achievements
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bugstan&layout=donut&theme=radical&hide_border=true&v=12" height="220" alt="Top Languages" />
-  <img src="https://github-profile-trophy.vercel.app/?username=bugstan&theme=radical&no-frame=true&column=3&v=12" height="220" alt="Trophies" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bugstan&layout=donut&theme=radical&hide_border=true&v=14" height="220" alt="Top Languages" />
+  <img src="https://github-profile-trophy.vercel.app/?username=bugstan&theme=radical&no-frame=true&column=3&v=14" height="220" alt="Trophies" />
 </p>
 
 ---
@@ -25,7 +26,7 @@
 ### 🔥 Activity Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bugstan&theme=github-dark-blue&hide_border=true&area=true&v=12" width="100%" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bugstan&theme=radical&hide_border=true&area=true&v=14" width="100%" alt="Activity Graph" />
 </p>
 
 ---
