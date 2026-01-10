@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Arthas' GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 0, Total Commits  : 1475, Total PRs: 6, Total Issues: 7, Contributed to (last year): 25</desc>
+        <desc id="descId">Total Stars Earned: 0, Total Commits  : 1476, Total PRs: 6, Total Issues: 7, Contributed to (last year): 25</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 210.96530908169487;
+        stroke-dashoffset: 210.95486802821063;
       }
     }
   
