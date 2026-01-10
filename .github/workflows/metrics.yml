@@ -22,13 +22,12 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: bugstan
           template: classic
-          base: header
+          base: header, activity, community
           filename: github-stats.svg
           config_timezone: Asia/Shanghai
-          # 只统计 Star，不显示杂乱的仓库列表
+          # Feature check: Include organization repositories for star counting
           plugin_repositories: yes
           plugin_repositories_affiliations: owner, collaborator, organization_member
-          # 美化：去除边框，放大文字
           config_theme: dark
           extras_css: |
             :root {
@@ -36,7 +35,7 @@ jobs:
               --color-fg-default: #a9fef7;
               --color-accent-fg: #fe428e;
             }
-            /* 彻底移除表格框和背景分区 */
+            svg { background: transparent !important; }
             section, .items-wrapper, .header { 
               border: none !important; 
               background: transparent !important; 
@@ -49,9 +48,9 @@ jobs:
             .field { 
               font-size: 16px !important; 
               margin-bottom: 8px !important; 
+              color: #a9fef7 !important;
             }
-            .field svg { fill: #fe428e !important; transform: scale(1.2); }
-            /* 全局隐藏不需要显示的板块 */
+            .field svg { fill: #fe428e !important; }
             #metrics-end, .featured-repositories { display: none !important; }
 
       - name: Top Languages Card
