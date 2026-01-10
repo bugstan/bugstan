@@ -1,7 +1,5 @@
 # 👋 Hi, I'm bugstan
 
-> **Windows Developer | .NET Enthusiast | AI Explorer**
-
 ---
 
 ### 📊 GitHub Statistics (Including Private Repos)
@@ -34,5 +32,3 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=bugstan&color=blueviolet&style=flat-square&label=Profile+Views" />
 </p>
-
-
