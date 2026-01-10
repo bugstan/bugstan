@@ -30,20 +30,25 @@ jobs:
           plugin_repositories_affiliations: owner, collaborator, organization_member
           config_theme: radical
 
-      - name: Top Languages Card
-        uses: readme-tools/github-readme-stats-action@v1
+      - name: Top Languages Card (Metrics)
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          card: top-langs
-          options: theme=radical&layout=donut&include_orgs=true
-          path: top-langs.svg
+          user: bugstan
+          template: classic
+          base: ""
+          filename: top-langs.svg
+          plugin_languages: yes
+          plugin_languages_ignored: html, css
+          plugin_languages_details: percentage
+          config_theme: radical
 
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-stats.svg top-langs.svg
-          git commit -m "Update stats cards via GitHub Actions" || exit 0
+          git commit -m "Fix: Final consolidation to Metrics for all cards" || exit 0
           # 增加 rebase 以解决冲突
           git pull --rebase origin main
           git push
