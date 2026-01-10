@@ -5,9 +5,8 @@
 ### 📊 GitHub Statistics (Including Private Repos)
 
 <p align="center">
-  <!-- 移除高度限制或增加高度，使 Metrics 卡片不再显得缩水 -->
-  <img src="github-stats.svg" height="250" alt="bugstan's GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bugstan&theme=radical&hide_border=true&v=35" height="250" alt="GitHub Streak" />
+  <img src="github-stats.svg" height="200" alt="GitHub Metrics" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bugstan&theme=radical&hide_border=true" height="200" alt="GitHub Streak" />
 </p>
 
 ---
