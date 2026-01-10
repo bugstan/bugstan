@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="github-stats.svg" height="200" alt="GitHub Metrics" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bugstan&theme=radical&hide_border=true" height="200" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=bugstan&theme=radical&hide_border=true" height="200" alt="GitHub Streak" />
 </p>
 
 ---

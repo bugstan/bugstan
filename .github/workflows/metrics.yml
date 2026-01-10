@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: bugstan
           template: classic
-          base: header
+          base: header, repositories
           filename: github-stats.svg
           config_timezone: Asia/Shanghai
           config_display: large
@@ -42,6 +42,8 @@ jobs:
               --color-accent-fg: #fe428e;
             }
             svg { background: transparent !important; }
+            /* Force visibility of content while hiding the repo list */
+            .repositories { display: none !important; }
             section, .items-wrapper, .header { 
               border: none !important; 
               background: transparent !important; 
