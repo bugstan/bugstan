@@ -25,7 +25,8 @@
 ### 🔥 Live Activity Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bugstan&theme=radical&hide_border=true&area=true&v=25" width="100%" alt="Activity Graph" />
+  <!-- 切换为 react 主题，它是更符合 GitHub 风格的深色背景，不再刺眼 -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bugstan&theme=react&hide_border=true&area=true&v=30" width="100%" alt="Activity Graph" />
 </p>
 
 ---
