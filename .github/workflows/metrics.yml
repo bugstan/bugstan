@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 增加写权限，解决 403 问题
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
 
@@ -16,7 +19,6 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           card: stats
-          # 这里配置你喜欢的 radical 主题
           options: theme=radical&include_all_commits=true&count_private=true&show_icons=true
           path: github-stats.svg
 
@@ -33,5 +35,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-stats.svg top-langs.svg
-          git commit -m "Update stats with private data (Aesthetic Version)" || exit 0
+          git commit -m "Update stats cards via GitHub Actions" || exit 0
           git push
