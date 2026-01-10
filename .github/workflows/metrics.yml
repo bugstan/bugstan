@@ -1,49 +1,26 @@
-name: Generate Aesthetic Cards
+name: Generate High Aesthetic Cards
+
 on:
   schedule: [{cron: "0 */12 * * *"}]
   workflow_dispatch:
   push: {branches: ["master", "main"]}
+
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v3
-
-      - name: GitHub Stats Card
-        uses: lowlighter/metrics@latest
+      - name: Generate Stats Cards
+        uses: teoxoy/profile-readme-stats@v1
         with:
-          filename: stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Shanghai
-          plugin_languages: yes
-          plugin_languages_ignored: html, css
-          plugin_languages_details: bytes-size, percentage
-          output_action: commit
-          committer_branch: main
-
-      - name: Languages Pie Card
-        uses: lowlighter/metrics@latest
-        with:
-          filename: languages.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_languages: yes
-          plugin_languages_ignored: html, css
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-          output_action: commit
-          committer_branch: main
-
-      - name: Isometric Commitment 3D
-        uses: lowlighter/metrics@latest
-        with:
-          filename: isocalendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
-          output_action: commit
-          committer_branch: main
+          include_all_commits: true
+          # 使用你喜欢的 radical 主题
+          theme: radical
+      - name: Commit & Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add *.svg
+          git commit -m "Update high-aesthetic stats cards with private data" || exit 0
+          git push
