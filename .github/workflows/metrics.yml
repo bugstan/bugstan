@@ -1,4 +1,4 @@
-name: Generate Aesthetic Cards
+name: Generate High Aesthetic Cards
 
 on:
   schedule: [{cron: "0 */12 * * *"}]
@@ -6,21 +6,32 @@ on:
   push: {branches: ["master", "main"]}
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Generate Stats Cards
-        uses: teoxoy/profile-readme-stats@v1
+
+      - name: Stats Card
+        uses: readme-tools/github-readme-stats-action@v1
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          include_all_commits: true
-          # 依然使用你最喜欢的 radical 配色
-          theme: radical
+          card: stats
+          # 这里配置你喜欢的 radical 主题
+          options: theme=radical&include_all_commits=true&count_private=true&show_icons=true
+          path: github-stats.svg
+
+      - name: Top Languages Card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          card: top-langs
+          options: theme=radical&layout=donut
+          path: top-langs.svg
+
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add *.svg
-          git commit -m "Update high-aesthetic stats cards with private data" || exit 0
+          git add github-stats.svg top-langs.svg
+          git commit -m "Update stats with private data (Aesthetic Version)" || exit 0
           git push
