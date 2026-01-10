@@ -8,11 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # 增加写权限，解决 403 问题
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          # 使用私有 Token 进行检出，确保有完整的推送权限
+          token: ${{ secrets.METRICS_TOKEN }}
 
       - name: Stats Card
         uses: readme-tools/github-readme-stats-action@v1
@@ -36,4 +38,6 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-stats.svg top-langs.svg
           git commit -m "Update stats cards via GitHub Actions" || exit 0
+          # 增加 rebase 以解决冲突
+          git pull --rebase origin main
           git push
