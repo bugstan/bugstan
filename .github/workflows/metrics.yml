@@ -16,13 +16,29 @@ jobs:
           # 使用私有 Token 进行检出，确保有完整的推送权限
           token: ${{ secrets.METRICS_TOKEN }}
 
-      - name: Stats Card
-        uses: readme-tools/github-readme-stats-action@v1
+      - name: Stats Card (Metrics for Org Stars)
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          card: stats
-          options: theme=radical&include_all_commits=true&count_private=true&show_icons=true&include_orgs=true
-          path: github-stats.svg
+          user: bugstan
+          template: classic
+          base: header, repositories
+          filename: github-stats.svg
+          config_timezone: Asia/Shanghai
+          # 核心：统计组织内的项目
+          plugin_repositories: yes
+          plugin_repositories_affiliations: owner, collaborator, organization_member
+          # 美化：匹配 Radical 配色
+          config_theme: dark
+          extras_css: |
+            :root {
+              --color-canvas-default: #141321;
+              --color-fg-default: #a9fef7;
+              --color-accent-fg: #fe428e;
+            }
+            .header, h2 { color: #fe428e !important; }
+            .field svg { fill: #fe428e !important; }
+            section { border: 1px solid #fe428e; border-radius: 6px; padding: 10px; }
 
       - name: Top Languages Card
         uses: readme-tools/github-readme-stats-action@v1
