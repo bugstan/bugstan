@@ -16,27 +16,6 @@ jobs:
           # 使用私有 Token 进行检出，确保有完整的推送权限
           token: ${{ secrets.METRICS_TOKEN }}
 
-      - name: GitHub Stats Card
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: bugstan
-          template: classic
-          base: header, repositories
-          filename: github-stats.svg
-          config_timezone: Asia/Shanghai
-          # Stable plugins
-          plugin_lines: yes
-          plugin_repositories: yes
-          plugin_repositories_affiliations: owner, collaborator, organization_member
-          config_theme: radical
-          extras_css: |
-            svg { background: transparent !important; }
-            .repositories { display: none !important; }
-            .header, h2 { color: #fe428e !important; font-size: 26px !important; }
-            .field { font-size: 18px !important; color: #a9fef7 !important; }
-            .field svg { fill: #fe428e !important; }
-
       - name: Top Languages Card (Metrics)
         uses: lowlighter/metrics@latest
         with:
