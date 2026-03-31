@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           # 使用私有 Token 进行检出，确保有完整的推送权限
           token: ${{ secrets.METRICS_TOKEN }}
