@@ -3,6 +3,7 @@ const { github, listAuthenticatedOwnerSourceRepos, listPublicSourceRepos } = req
 
 const CONFIG = {
   ignoredLanguages: new Set(["HTML", "CSS"]),
+  languageAliases: new Map([["Blade", "PHP"]]),
   output: process.env.LANGUAGE_STATS_OUTPUT || "top-langs.svg",
 };
 
@@ -110,7 +111,8 @@ async function main() {
       if (CONFIG.ignoredLanguages.has(language)) {
         continue;
       }
-      totals.set(language, (totals.get(language) || 0) + bytes);
+      const normalizedLanguage = CONFIG.languageAliases.get(language) || language;
+      totals.set(normalizedLanguage, (totals.get(normalizedLanguage) || 0) + bytes);
     }
   }
 
