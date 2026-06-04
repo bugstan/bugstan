@@ -13,7 +13,7 @@
 ### 📈 Contribution Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bugstan&theme=react&hide_border=true" width="100%" alt="Activity Graph" />
+  <img src="contribution-graph.svg" width="100%" alt="Public Contribution Graph" />
 </p>
 
 <p align="right">

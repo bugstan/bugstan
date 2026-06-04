@@ -13,32 +13,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # 使用私有 Token 进行检出，确保有完整的推送权限
+          # Use a private token for checkout to ensure full push permissions.
           token: ${{ secrets.METRICS_TOKEN }}
 
-      - name: Top Languages Card (Metrics)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: bugstan
-          template: classic
-          base: ""
-          filename: top-langs.svg
-          plugin_languages: yes
-          plugin_languages_ignored: html, css
-          plugin_languages_details: percentage
-          config_theme: radical
-          extras_css: |
-            svg { background: transparent !important; }
-            section, .items-wrapper { border: none !important; background: transparent !important; }
-            h2 { color: #fe428e !important; font-size: 24px !important; }
+      - name: Public Language Distribution
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-language-stats.js
+
+      - name: Public Contribution Graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-contribution-graph.js
 
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add top-langs.svg
+          git add top-langs.svg contribution-graph.svg
           git commit -m "Fix: Final consolidation to Metrics for all cards" || exit 0
-          # 增加 rebase 以解决冲突
+          # Rebase before pushing to resolve conflicts.
           git pull --rebase origin main
           git push
