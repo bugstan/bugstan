@@ -17,11 +17,11 @@
     <g clip-path="url(#bar-clip)">
       <rect x="0.00" y="0" width="144.23" height="10" fill="#4F5D95" />
 <rect x="144.23" y="0" width="75.73" height="10" fill="#A97BFF" />
-<rect x="219.96" y="0" width="70.61" height="10" fill="#3178c6" />
+<rect x="219.96" y="0" width="70.60" height="10" fill="#3178c6" />
 <rect x="290.57" y="0" width="44.71" height="10" fill="#00ADD8" />
-<rect x="335.28" y="0" width="33.90" height="10" fill="#dea584" />
+<rect x="335.27" y="0" width="33.90" height="10" fill="#dea584" />
 <rect x="369.18" y="0" width="30.12" height="10" fill="#b07219" />
-<rect x="399.30" y="0" width="25.98" height="10" fill="#f34b7d" />
+<rect x="399.29" y="0" width="25.98" height="10" fill="#f34b7d" />
 <rect x="425.27" y="0" width="14.73" height="10" fill="#f1e05a" />
     </g>
   </svg>
