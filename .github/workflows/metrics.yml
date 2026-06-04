@@ -16,9 +16,9 @@ jobs:
           # Use a private token for checkout to ensure full push permissions.
           token: ${{ secrets.METRICS_TOKEN }}
 
-      - name: Public Language Distribution
+      - name: Language Distribution
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: node scripts/generate-language-stats.js
 
       - name: Public Contribution Graph

@@ -57,6 +57,16 @@ async function listPublicSourceRepos(owner) {
     .sort((a, b) => a.localeCompare(b));
 }
 
+async function listAuthenticatedOwnerSourceRepos(owner) {
+  const repos = await paginate("/user/repos?visibility=all&affiliation=owner");
+
+  return repos
+    .filter((repo) => repo.owner?.login === owner)
+    .filter((repo) => repo.fork === false)
+    .map((repo) => repo.full_name)
+    .sort((a, b) => a.localeCompare(b));
+}
+
 async function listAllPublicSourceRepos(owners) {
   const reposByOwner = await Promise.all(owners.map(listPublicSourceRepos));
   return reposByOwner.flat();
@@ -65,5 +75,7 @@ async function listAllPublicSourceRepos(owners) {
 module.exports = {
   github,
   listAllPublicSourceRepos,
+  listAuthenticatedOwnerSourceRepos,
+  listPublicSourceRepos,
   paginate,
 };

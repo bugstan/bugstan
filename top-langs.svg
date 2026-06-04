@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="220" viewBox="0 0 480 220" role="img" aria-labelledby="title desc">
-  <title id="title">Public Language Distribution</title>
-  <desc id="desc">Language distribution across public source repositories owned by bugstan and n2ns, excluding HTML and CSS.</desc>
+  <title id="title">Language Distribution</title>
+  <desc id="desc">Language distribution across bugstan personal repositories and n2ns public organization repositories, excluding HTML and CSS.</desc>
   <style>
     svg { background: transparent; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
     .panel { fill: transparent; }
@@ -11,35 +11,50 @@
   </style>
   <rect x="0" y="0" width="480" height="220" class="panel" />
   <text x="20" y="34" class="heading">Most used languages</text>
-  <text x="20" y="54" class="subtitle">8 public source repositories · bugstan + n2ns</text>
+  <text x="20" y="54" class="subtitle">27 source repositories · bugstan personal + n2ns public</text>
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="391.77" height="10" fill="#3178c6" />
-<rect x="391.77" y="0" width="38.25" height="10" fill="#f1e05a" />
-<rect x="430.02" y="0" width="8.27" height="10" fill="#b07219" />
-<rect x="438.29" y="0" width="1.22" height="10" fill="#8b949e" />
-<rect x="439.51" y="0" width="0.49" height="10" fill="#89e051" />
+      <rect x="0.00" y="0" width="103.93" height="10" fill="#4F5D95" />
+<rect x="103.93" y="0" width="78.36" height="10" fill="#A97BFF" />
+<rect x="182.28" y="0" width="73.05" height="10" fill="#3178c6" />
+<rect x="255.33" y="0" width="46.25" height="10" fill="#00ADD8" />
+<rect x="301.59" y="0" width="45.30" height="10" fill="#f7523f" />
+<rect x="346.89" y="0" width="35.08" height="10" fill="#dea584" />
+<rect x="381.96" y="0" width="31.16" height="10" fill="#b07219" />
+<rect x="413.12" y="0" width="26.88" height="10" fill="#f34b7d" />
     </g>
   </svg>
 
-        <circle cx="28" cy="104" r="5" fill="#3178c6" />
-        <text x="41" y="108" class="language">TypeScript</text>
-        <text x="216" y="108" class="percent">89.04%</text>
+        <circle cx="28" cy="104" r="5" fill="#4F5D95" />
+        <text x="41" y="108" class="language">PHP</text>
+        <text x="216" y="108" class="percent">23.62%</text>
 
-        <circle cx="260" cy="104" r="5" fill="#f1e05a" />
-        <text x="273" y="108" class="language">JavaScript</text>
-        <text x="448" y="108" class="percent">8.69%</text>
+        <circle cx="260" cy="104" r="5" fill="#A97BFF" />
+        <text x="273" y="108" class="language">Kotlin</text>
+        <text x="448" y="108" class="percent">17.81%</text>
 
-        <circle cx="28" cy="130" r="5" fill="#b07219" />
-        <text x="41" y="134" class="language">Java</text>
-        <text x="216" y="134" class="percent">1.88%</text>
+        <circle cx="28" cy="130" r="5" fill="#3178c6" />
+        <text x="41" y="134" class="language">TypeScript</text>
+        <text x="216" y="134" class="percent">16.60%</text>
 
-        <circle cx="260" cy="130" r="5" fill="#8b949e" />
-        <text x="273" y="134" class="language">Batchfile</text>
-        <text x="448" y="134" class="percent">0.28%</text>
+        <circle cx="260" cy="130" r="5" fill="#00ADD8" />
+        <text x="273" y="134" class="language">Go</text>
+        <text x="448" y="134" class="percent">10.51%</text>
 
-        <circle cx="28" cy="156" r="5" fill="#89e051" />
-        <text x="41" y="160" class="language">Shell</text>
-        <text x="216" y="160" class="percent">0.11%</text>
+        <circle cx="28" cy="156" r="5" fill="#f7523f" />
+        <text x="41" y="160" class="language">Blade</text>
+        <text x="216" y="160" class="percent">10.30%</text>
+
+        <circle cx="260" cy="156" r="5" fill="#dea584" />
+        <text x="273" y="160" class="language">Rust</text>
+        <text x="448" y="160" class="percent">7.97%</text>
+
+        <circle cx="28" cy="182" r="5" fill="#b07219" />
+        <text x="41" y="186" class="language">Java</text>
+        <text x="216" y="186" class="percent">7.08%</text>
+
+        <circle cx="260" cy="182" r="5" fill="#f34b7d" />
+        <text x="273" y="186" class="language">C++</text>
+        <text x="448" y="186" class="percent">6.11%</text>
 </svg>

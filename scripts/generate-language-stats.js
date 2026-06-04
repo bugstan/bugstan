@@ -1,8 +1,7 @@
 const fs = require("fs");
-const { github, listAllPublicSourceRepos } = require("./github-public-repos");
+const { github, listAuthenticatedOwnerSourceRepos, listPublicSourceRepos } = require("./github-public-repos");
 
 const CONFIG = {
-  owners: ["bugstan", "n2ns"],
   ignoredLanguages: new Set(["HTML", "CSS"]),
   output: process.env.LANGUAGE_STATS_OUTPUT || "top-langs.svg",
 };
@@ -75,8 +74,8 @@ function renderSvg({ totals, repoCount }) {
     .join("\n");
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
-  <title id="title">Public Language Distribution</title>
-  <desc id="desc">Language distribution across public source repositories owned by bugstan and n2ns, excluding HTML and CSS.</desc>
+  <title id="title">Language Distribution</title>
+  <desc id="desc">Language distribution across bugstan personal repositories and n2ns public organization repositories, excluding HTML and CSS.</desc>
   <style>
     svg { background: transparent; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
     .panel { fill: transparent; }
@@ -87,7 +86,7 @@ function renderSvg({ totals, repoCount }) {
   </style>
   <rect x="0" y="0" width="${width}" height="${height}" class="panel" />
   <text x="20" y="34" class="heading">Most used languages</text>
-  <text x="20" y="54" class="subtitle">${repoCount} public source repositories · bugstan + n2ns</text>
+  <text x="20" y="54" class="subtitle">${repoCount} source repositories · bugstan personal + n2ns public</text>
   <svg x="${barX}" y="${barY}" width="${barWidth}" height="10" viewBox="0 0 ${barWidth} 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="${barWidth}" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
@@ -100,7 +99,9 @@ ${rowMarkup}
 }
 
 async function main() {
-  const repos = await listAllPublicSourceRepos(CONFIG.owners);
+  const personalRepos = await listAuthenticatedOwnerSourceRepos("bugstan");
+  const organizationRepos = await listPublicSourceRepos("n2ns");
+  const repos = [...personalRepos, ...organizationRepos];
   const totals = new Map();
 
   for (const repo of repos) {
@@ -114,7 +115,7 @@ async function main() {
   }
 
   fs.writeFileSync(CONFIG.output, renderSvg({ totals, repoCount: repos.length }), "utf8");
-  console.log(`Generated ${CONFIG.output} from ${repos.length} public source repositories.`);
+  console.log(`Generated ${CONFIG.output} from ${personalRepos.length} bugstan repositories and ${organizationRepos.length} n2ns public repositories.`);
 }
 
 main().catch((error) => {
