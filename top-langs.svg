@@ -15,46 +15,46 @@
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="158.13" height="10" fill="#4F5D95" />
-<rect x="158.13" y="0" width="70.45" height="10" fill="#3178c6" />
-<rect x="228.58" y="0" width="60.65" height="10" fill="#A97BFF" />
-<rect x="289.23" y="0" width="37.66" height="10" fill="#b07219" />
-<rect x="326.90" y="0" width="35.80" height="10" fill="#00ADD8" />
-<rect x="362.70" y="0" width="30.96" height="10" fill="#f34b7d" />
-<rect x="393.66" y="0" width="28.80" height="10" fill="#dea584" />
-<rect x="422.46" y="0" width="17.54" height="10" fill="#3572A5" />
+      <rect x="0.00" y="0" width="155.43" height="10" fill="#4F5D95" />
+<rect x="155.43" y="0" width="71.18" height="10" fill="#3178c6" />
+<rect x="226.61" y="0" width="61.21" height="10" fill="#A97BFF" />
+<rect x="287.83" y="0" width="38.02" height="10" fill="#b07219" />
+<rect x="325.84" y="0" width="36.14" height="10" fill="#00ADD8" />
+<rect x="361.98" y="0" width="31.25" height="10" fill="#f34b7d" />
+<rect x="393.23" y="0" width="29.07" height="10" fill="#dea584" />
+<rect x="422.29" y="0" width="17.71" height="10" fill="#3572A5" />
     </g>
   </svg>
 
         <circle cx="28" cy="104" r="5" fill="#4F5D95" />
         <text x="41" y="108" class="language">PHP</text>
-        <text x="216" y="108" class="percent">35.94%</text>
+        <text x="216" y="108" class="percent">35.32%</text>
 
         <circle cx="260" cy="104" r="5" fill="#3178c6" />
         <text x="273" y="108" class="language">TypeScript</text>
-        <text x="448" y="108" class="percent">16.01%</text>
+        <text x="448" y="108" class="percent">16.18%</text>
 
         <circle cx="28" cy="130" r="5" fill="#A97BFF" />
         <text x="41" y="134" class="language">Kotlin</text>
-        <text x="216" y="134" class="percent">13.78%</text>
+        <text x="216" y="134" class="percent">13.91%</text>
 
         <circle cx="260" cy="130" r="5" fill="#b07219" />
         <text x="273" y="134" class="language">Java</text>
-        <text x="448" y="134" class="percent">8.56%</text>
+        <text x="448" y="134" class="percent">8.64%</text>
 
         <circle cx="28" cy="156" r="5" fill="#00ADD8" />
         <text x="41" y="160" class="language">Go</text>
-        <text x="216" y="160" class="percent">8.14%</text>
+        <text x="216" y="160" class="percent">8.21%</text>
 
         <circle cx="260" cy="156" r="5" fill="#f34b7d" />
         <text x="273" y="160" class="language">C++</text>
-        <text x="448" y="160" class="percent">7.04%</text>
+        <text x="448" y="160" class="percent">7.10%</text>
 
         <circle cx="28" cy="182" r="5" fill="#dea584" />
         <text x="41" y="186" class="language">Rust</text>
-        <text x="216" y="186" class="percent">6.55%</text>
+        <text x="216" y="186" class="percent">6.61%</text>
 
         <circle cx="260" cy="182" r="5" fill="#3572A5" />
         <text x="273" y="186" class="language">Python</text>
-        <text x="448" y="186" class="percent">3.99%</text>
+        <text x="448" y="186" class="percent">4.02%</text>
 </svg>
