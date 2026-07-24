@@ -15,9 +15,9 @@
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="163.97" height="10" fill="#4F5D95" />
-<rect x="163.97" y="0" width="102.12" height="10" fill="#3178c6" />
-<rect x="266.08" y="0" width="54.99" height="10" fill="#A97BFF" />
+      <rect x="0.00" y="0" width="163.96" height="10" fill="#4F5D95" />
+<rect x="163.96" y="0" width="102.12" height="10" fill="#3178c6" />
+<rect x="266.09" y="0" width="54.99" height="10" fill="#A97BFF" />
 <rect x="321.08" y="0" width="32.46" height="10" fill="#00ADD8" />
 <rect x="353.54" y="0" width="31.04" height="10" fill="#dea584" />
 <rect x="384.58" y="0" width="21.87" height="10" fill="#b07219" />
@@ -28,7 +28,7 @@
 
         <circle cx="28" cy="104" r="5" fill="#4F5D95" />
         <text x="41" y="108" class="language">PHP</text>
-        <text x="216" y="108" class="percent">37.27%</text>
+        <text x="216" y="108" class="percent">37.26%</text>
 
         <circle cx="260" cy="104" r="5" fill="#3178c6" />
         <text x="273" y="108" class="language">TypeScript</text>
