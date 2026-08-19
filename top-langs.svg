@@ -15,28 +15,28 @@
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="162.27" height="10" fill="#4F5D95" />
-<rect x="162.27" y="0" width="101.40" height="10" fill="#3178c6" />
-<rect x="263.66" y="0" width="58.94" height="10" fill="#A97BFF" />
-<rect x="322.61" y="0" width="32.05" height="10" fill="#00ADD8" />
-<rect x="354.65" y="0" width="30.64" height="10" fill="#dea584" />
-<rect x="385.29" y="0" width="21.59" height="10" fill="#b07219" />
-<rect x="406.89" y="0" width="16.84" height="10" fill="#f34b7d" />
-<rect x="423.72" y="0" width="16.28" height="10" fill="#3572A5" />
+      <rect x="0.00" y="0" width="162.24" height="10" fill="#4F5D95" />
+<rect x="162.24" y="0" width="101.38" height="10" fill="#3178c6" />
+<rect x="263.62" y="0" width="59.00" height="10" fill="#A97BFF" />
+<rect x="322.63" y="0" width="32.04" height="10" fill="#00ADD8" />
+<rect x="354.67" y="0" width="30.63" height="10" fill="#dea584" />
+<rect x="385.30" y="0" width="21.59" height="10" fill="#b07219" />
+<rect x="406.89" y="0" width="16.83" height="10" fill="#f34b7d" />
+<rect x="423.73" y="0" width="16.27" height="10" fill="#3572A5" />
     </g>
   </svg>
 
         <circle cx="28" cy="104" r="5" fill="#4F5D95" />
         <text x="41" y="108" class="language">PHP</text>
-        <text x="216" y="108" class="percent">36.88%</text>
+        <text x="216" y="108" class="percent">36.87%</text>
 
         <circle cx="260" cy="104" r="5" fill="#3178c6" />
         <text x="273" y="108" class="language">TypeScript</text>
-        <text x="448" y="108" class="percent">23.05%</text>
+        <text x="448" y="108" class="percent">23.04%</text>
 
         <circle cx="28" cy="130" r="5" fill="#A97BFF" />
         <text x="41" y="134" class="language">Kotlin</text>
-        <text x="216" y="134" class="percent">13.40%</text>
+        <text x="216" y="134" class="percent">13.41%</text>
 
         <circle cx="260" cy="130" r="5" fill="#00ADD8" />
         <text x="273" y="134" class="language">Go</text>
