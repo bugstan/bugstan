@@ -15,24 +15,24 @@
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="161.09" height="10" fill="#4F5D95" />
-<rect x="161.09" y="0" width="100.92" height="10" fill="#3178c6" />
-<rect x="262.01" y="0" width="61.75" height="10" fill="#A97BFF" />
-<rect x="323.76" y="0" width="31.73" height="10" fill="#00ADD8" />
-<rect x="355.49" y="0" width="30.34" height="10" fill="#dea584" />
-<rect x="385.83" y="0" width="21.38" height="10" fill="#b07219" />
-<rect x="407.21" y="0" width="16.67" height="10" fill="#f34b7d" />
-<rect x="423.88" y="0" width="16.12" height="10" fill="#3572A5" />
+      <rect x="0.00" y="0" width="161.13" height="10" fill="#4F5D95" />
+<rect x="161.13" y="0" width="100.91" height="10" fill="#3178c6" />
+<rect x="262.03" y="0" width="61.74" height="10" fill="#A97BFF" />
+<rect x="323.78" y="0" width="31.73" height="10" fill="#00ADD8" />
+<rect x="355.51" y="0" width="30.33" height="10" fill="#dea584" />
+<rect x="385.84" y="0" width="21.38" height="10" fill="#b07219" />
+<rect x="407.22" y="0" width="16.67" height="10" fill="#f34b7d" />
+<rect x="423.89" y="0" width="16.11" height="10" fill="#3572A5" />
     </g>
   </svg>
 
         <circle cx="28" cy="104" r="5" fill="#4F5D95" />
         <text x="41" y="108" class="language">PHP</text>
-        <text x="216" y="108" class="percent">36.61%</text>
+        <text x="216" y="108" class="percent">36.62%</text>
 
         <circle cx="260" cy="104" r="5" fill="#3178c6" />
         <text x="273" y="108" class="language">TypeScript</text>
-        <text x="448" y="108" class="percent">22.94%</text>
+        <text x="448" y="108" class="percent">22.93%</text>
 
         <circle cx="28" cy="130" r="5" fill="#A97BFF" />
         <text x="41" y="134" class="language">Kotlin</text>
