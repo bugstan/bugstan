@@ -15,8 +15,8 @@
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="161.45" height="10" fill="#4F5D95" />
-<rect x="161.45" y="0" width="100.88" height="10" fill="#3178c6" />
+      <rect x="0.00" y="0" width="161.44" height="10" fill="#4F5D95" />
+<rect x="161.44" y="0" width="100.89" height="10" fill="#3178c6" />
 <rect x="262.33" y="0" width="61.64" height="10" fill="#A97BFF" />
 <rect x="323.97" y="0" width="31.67" height="10" fill="#00ADD8" />
 <rect x="355.65" y="0" width="30.28" height="10" fill="#dea584" />
