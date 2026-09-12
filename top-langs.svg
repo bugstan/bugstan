@@ -16,11 +16,11 @@
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
       <rect x="0.00" y="0" width="160.94" height="10" fill="#4F5D95" />
-<rect x="160.94" y="0" width="101.12" height="10" fill="#3178c6" />
+<rect x="160.94" y="0" width="101.13" height="10" fill="#3178c6" />
 <rect x="262.06" y="0" width="61.66" height="10" fill="#A97BFF" />
 <rect x="323.72" y="0" width="31.68" height="10" fill="#00ADD8" />
 <rect x="355.40" y="0" width="30.51" height="10" fill="#dea584" />
-<rect x="385.91" y="0" width="21.35" height="10" fill="#b07219" />
+<rect x="385.92" y="0" width="21.35" height="10" fill="#b07219" />
 <rect x="407.26" y="0" width="16.65" height="10" fill="#f34b7d" />
 <rect x="423.91" y="0" width="16.09" height="10" fill="#3572A5" />
     </g>
@@ -44,7 +44,7 @@
 
         <circle cx="28" cy="156" r="5" fill="#dea584" />
         <text x="41" y="160" class="language">Rust</text>
-        <text x="216" y="160" class="percent">6.94%</text>
+        <text x="216" y="160" class="percent">6.93%</text>
 
         <circle cx="260" cy="156" r="5" fill="#b07219" />
         <text x="273" y="160" class="language">Java</text>
