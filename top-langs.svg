@@ -15,10 +15,10 @@
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="161.38" height="10" fill="#4F5D95" />
-<rect x="161.38" y="0" width="100.96" height="10" fill="#3178c6" />
+      <rect x="0.00" y="0" width="161.37" height="10" fill="#4F5D95" />
+<rect x="161.37" y="0" width="100.96" height="10" fill="#3178c6" />
 <rect x="262.33" y="0" width="61.55" height="10" fill="#A97BFF" />
-<rect x="323.88" y="0" width="31.63" height="10" fill="#00ADD8" />
+<rect x="323.89" y="0" width="31.63" height="10" fill="#00ADD8" />
 <rect x="355.51" y="0" width="30.50" height="10" fill="#dea584" />
 <rect x="386.01" y="0" width="21.31" height="10" fill="#b07219" />
 <rect x="407.32" y="0" width="16.62" height="10" fill="#f34b7d" />
@@ -32,7 +32,7 @@
 
         <circle cx="260" cy="104" r="5" fill="#3178c6" />
         <text x="273" y="108" class="language">TypeScript</text>
-        <text x="448" y="108" class="percent">22.94%</text>
+        <text x="448" y="108" class="percent">22.95%</text>
 
         <circle cx="28" cy="130" r="5" fill="#A97BFF" />
         <text x="41" y="134" class="language">Kotlin</text>
