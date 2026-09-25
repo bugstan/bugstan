@@ -1,10 +1,11 @@
 const fs = require("fs");
-const { github, listAuthenticatedOwnerSourceRepos, listPublicSourceRepos } = require("./github-public-repos");
+const { github, listAuthenticatedOwnerSourceRepos, listPublicSourceRepos, mapWithConcurrency } = require("./github-public-repos");
 
 const CONFIG = {
   ignoredLanguages: new Set(["HTML", "CSS"]),
   languageAliases: new Map([["Blade", "PHP"]]),
   output: process.env.LANGUAGE_STATS_OUTPUT || "top-langs.svg",
+  concurrency: 8,
 };
 
 function escapeXml(value) {
@@ -82,8 +83,12 @@ function renderSvg({ totals, repoCount }) {
     .panel { fill: transparent; }
     .heading { fill: #fe428e; font-size: 24px; font-weight: 700; }
     .subtitle { fill: #777; font-size: 13px; }
-    .language { fill: #777; font-size: 14px; font-weight: 600; }
-    .percent { fill: #666; font-size: 13px; text-anchor: end; }
+    .language { fill: #57606a; font-size: 14px; font-weight: 600; }
+    .percent { fill: #57606a; font-size: 13px; text-anchor: end; }
+    @media (prefers-color-scheme: dark) {
+      .subtitle { fill: #8b949e; }
+      .language, .percent { fill: #c9d1d9; }
+    }
   </style>
   <rect x="0" y="0" width="${width}" height="${height}" class="panel" />
   <text x="20" y="34" class="heading">Most used languages</text>
@@ -100,13 +105,15 @@ ${rowMarkup}
 }
 
 async function main() {
-  const personalRepos = await listAuthenticatedOwnerSourceRepos("bugstan");
-  const organizationRepos = await listPublicSourceRepos("n2ns");
+  const [personalRepos, organizationRepos] = await Promise.all([
+    listAuthenticatedOwnerSourceRepos("bugstan"),
+    listPublicSourceRepos("n2ns"),
+  ]);
   const repos = [...personalRepos, ...organizationRepos];
   const totals = new Map();
+  const languagesByRepo = await mapWithConcurrency(repos, CONFIG.concurrency, repositoryLanguages);
 
-  for (const repo of repos) {
-    const languages = await repositoryLanguages(repo);
+  for (const languages of languagesByRepo) {
     for (const [language, bytes] of Object.entries(languages)) {
       if (CONFIG.ignoredLanguages.has(language)) {
         continue;

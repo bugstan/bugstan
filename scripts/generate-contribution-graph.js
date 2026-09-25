@@ -1,11 +1,12 @@
 const fs = require("fs");
-const { listAllPublicSourceRepos, paginate } = require("./github-public-repos");
+const { listAllPublicSourceRepos, mapWithConcurrency, paginate } = require("./github-public-repos");
 
 const CONFIG = {
   owners: ["bugstan", "n2ns"],
   author: "bugstan",
   days: Number.parseInt(process.env.CONTRIBUTION_DAYS || "30", 10),
   output: process.env.CONTRIBUTION_GRAPH_OUTPUT || "contribution-graph.svg",
+  concurrency: 8,
 };
 
 function isoDate(date) {
@@ -105,23 +106,30 @@ function renderSvg({ buckets, repoCount, commitCount }) {
   <desc id="desc">Public commits by bugstan across bugstan personal repositories and n2ns organization repositories over the last ${CONFIG.days} days.</desc>
   <style>
     svg { background: transparent; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-    .panel { fill: #282c34; }
-    .title, .axis-title, .summary { fill: #ffffff; font-weight: 700; }
+    .panel { fill: #f6f8fa; }
+    .title, .axis-title, .summary { fill: #1f2328; font-weight: 700; }
     .title { font-size: 14px; }
     .axis-title { font-size: 11px; }
     .summary { font-size: 12px; }
-    .axis-label { fill: #ffffff; font-size: 9px; font-weight: 600; text-anchor: middle; }
+    .axis-label { fill: #1f2328; font-size: 9px; font-weight: 600; text-anchor: middle; }
     .y-label { text-anchor: end; }
-    .grid { stroke: #6b7280; stroke-width: 1; stroke-dasharray: 1 3; opacity: .55; }
-    .line { fill: none; stroke: #61dafb; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
-    .area { fill: #61dafb; opacity: .08; }
-    circle { fill: #61dafb; }
+    .grid { stroke: #8c959f; stroke-width: 1; stroke-dasharray: 1 3; opacity: .55; }
+    .line { fill: none; stroke: #0a7ea4; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+    .area { fill: #0a7ea4; opacity: .08; }
+    circle { fill: #0a7ea4; }
+    @media (prefers-color-scheme: dark) {
+      .panel { fill: #282c34; }
+      .title, .axis-title, .summary, .axis-label { fill: #ffffff; }
+      .grid { stroke: #6b7280; }
+      .line { stroke: #61dafb; }
+      .area, circle { fill: #61dafb; }
+    }
   </style>
   <rect x="30" y="24" width="838" height="312" class="panel" />
   <text x="449" y="54" class="title" text-anchor="middle">bugstan Public Contribution Graph</text>
-  <text x="449" y="322" class="summary" text-anchor="middle">${commitCount} commits · ${repoCount} public source repositories · bugstan + n2ns</text>
+  <text x="449" y="331" class="summary" text-anchor="middle">${commitCount} commits · ${repoCount} public source repositories · bugstan + n2ns</text>
   <text x="53" y="178" class="axis-title" text-anchor="middle" transform="rotate(-90 53 178)">Contributions</text>
-  <text x="463" y="315" class="axis-title" text-anchor="middle">Days</text>
+  <text x="463" y="316" class="axis-title" text-anchor="middle">Days</text>
   ${yGrid}
   ${xGrid}
   <polygon points="${area}" class="area" />
@@ -137,8 +145,11 @@ async function main() {
   const repos = await listAllPublicSourceRepos(CONFIG.owners);
   let commitCount = 0;
 
-  for (const repo of repos) {
-    const commits = await listAuthorCommits(repo, start.toISOString(), end.toISOString());
+  const commitsByRepo = await mapWithConcurrency(repos, CONFIG.concurrency, (repo) =>
+    listAuthorCommits(repo, start.toISOString(), end.toISOString()),
+  );
+
+  for (const commits of commitsByRepo) {
     for (const commit of commits) {
       const date = commit.commit?.author?.date ? isoDate(new Date(commit.commit.author.date)) : null;
       if (date && buckets.has(date)) {

@@ -44,6 +44,22 @@ async function paginate(path) {
   return results;
 }
 
+async function mapWithConcurrency(items, limit, fn) {
+  const results = new Array(items.length);
+  let next = 0;
+
+  async function worker() {
+    while (next < items.length) {
+      const index = next;
+      next += 1;
+      results[index] = await fn(items[index], index);
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
+}
+
 async function listPublicSourceRepos(owner) {
   const isOrg = owner === "n2ns";
   const path = isOrg ? `/orgs/${owner}/repos?type=public` : `/users/${owner}/repos?type=owner`;
@@ -77,5 +93,6 @@ module.exports = {
   listAllPublicSourceRepos,
   listAuthenticatedOwnerSourceRepos,
   listPublicSourceRepos,
+  mapWithConcurrency,
   paginate,
 };
