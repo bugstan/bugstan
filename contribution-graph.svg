@@ -3,23 +3,30 @@
   <desc id="desc">Public commits by bugstan across bugstan personal repositories and n2ns organization repositories over the last 30 days.</desc>
   <style>
     svg { background: transparent; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-    .panel { fill: #282c34; }
-    .title, .axis-title, .summary { fill: #ffffff; font-weight: 700; }
+    .panel { fill: #f6f8fa; }
+    .title, .axis-title, .summary { fill: #1f2328; font-weight: 700; }
     .title { font-size: 14px; }
     .axis-title { font-size: 11px; }
     .summary { font-size: 12px; }
-    .axis-label { fill: #ffffff; font-size: 9px; font-weight: 600; text-anchor: middle; }
+    .axis-label { fill: #1f2328; font-size: 9px; font-weight: 600; text-anchor: middle; }
     .y-label { text-anchor: end; }
-    .grid { stroke: #6b7280; stroke-width: 1; stroke-dasharray: 1 3; opacity: .55; }
-    .line { fill: none; stroke: #61dafb; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
-    .area { fill: #61dafb; opacity: .08; }
-    circle { fill: #61dafb; }
+    .grid { stroke: #8c959f; stroke-width: 1; stroke-dasharray: 1 3; opacity: .55; }
+    .line { fill: none; stroke: #0a7ea4; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+    .area { fill: #0a7ea4; opacity: .08; }
+    circle { fill: #0a7ea4; }
+    @media (prefers-color-scheme: dark) {
+      .panel { fill: #282c34; }
+      .title, .axis-title, .summary, .axis-label { fill: #ffffff; }
+      .grid { stroke: #6b7280; }
+      .line { stroke: #61dafb; }
+      .area, circle { fill: #61dafb; }
+    }
   </style>
   <rect x="30" y="24" width="838" height="312" class="panel" />
   <text x="449" y="54" class="title" text-anchor="middle">bugstan Public Contribution Graph</text>
-  <text x="449" y="322" class="summary" text-anchor="middle">4 commits · 11 public source repositories · bugstan + n2ns</text>
+  <text x="449" y="331" class="summary" text-anchor="middle">5 commits · 11 public source repositories · bugstan + n2ns</text>
   <text x="53" y="178" class="axis-title" text-anchor="middle" transform="rotate(-90 53 178)">Contributions</text>
-  <text x="463" y="315" class="axis-title" text-anchor="middle">Days</text>
+  <text x="463" y="316" class="axis-title" text-anchor="middle">Days</text>
   
       <line x1="92" y1="280.00" x2="834" y2="280.00" class="grid" />
       <text x="84" y="284.00" class="axis-label y-label">0</text>
@@ -68,8 +75,8 @@
 <line x1="782.83" y1="74" x2="782.83" y2="280" class="grid" />
 <line x1="808.41" y1="74" x2="808.41" y2="280" class="grid" />
 <line x1="834.00" y1="74" x2="834.00" y2="280" class="grid" />
-  <polygon points="92,280 92.00,280.00 117.59,280.00 143.17,280.00 168.76,280.00 194.34,280.00 219.93,280.00 245.52,280.00 271.10,280.00 296.69,280.00 322.28,280.00 347.86,280.00 373.45,280.00 399.03,280.00 424.62,280.00 450.21,280.00 475.79,280.00 501.38,280.00 526.97,280.00 552.55,280.00 578.14,280.00 603.72,280.00 629.31,280.00 654.90,280.00 680.48,280.00 706.07,280.00 731.66,115.20 757.24,280.00 782.83,280.00 808.41,280.00 834.00,280.00 834,280" class="area" />
-  <polyline points="92.00,280.00 117.59,280.00 143.17,280.00 168.76,280.00 194.34,280.00 219.93,280.00 245.52,280.00 271.10,280.00 296.69,280.00 322.28,280.00 347.86,280.00 373.45,280.00 399.03,280.00 424.62,280.00 450.21,280.00 475.79,280.00 501.38,280.00 526.97,280.00 552.55,280.00 578.14,280.00 603.72,280.00 629.31,280.00 654.90,280.00 680.48,280.00 706.07,280.00 731.66,115.20 757.24,280.00 782.83,280.00 808.41,280.00 834.00,280.00" class="line" />
+  <polygon points="92,280 92.00,280.00 117.59,280.00 143.17,280.00 168.76,280.00 194.34,280.00 219.93,280.00 245.52,280.00 271.10,280.00 296.69,280.00 322.28,280.00 347.86,280.00 373.45,280.00 399.03,280.00 424.62,280.00 450.21,280.00 475.79,280.00 501.38,280.00 526.97,280.00 552.55,280.00 578.14,280.00 603.72,280.00 629.31,280.00 654.90,280.00 680.48,280.00 706.07,280.00 731.66,115.20 757.24,280.00 782.83,280.00 808.41,280.00 834.00,238.80 834,280" class="area" />
+  <polyline points="92.00,280.00 117.59,280.00 143.17,280.00 168.76,280.00 194.34,280.00 219.93,280.00 245.52,280.00 271.10,280.00 296.69,280.00 322.28,280.00 347.86,280.00 373.45,280.00 399.03,280.00 424.62,280.00 450.21,280.00 475.79,280.00 501.38,280.00 526.97,280.00 552.55,280.00 578.14,280.00 603.72,280.00 629.31,280.00 654.90,280.00 680.48,280.00 706.07,280.00 731.66,115.20 757.24,280.00 782.83,280.00 808.41,280.00 834.00,238.80" class="line" />
   <circle cx="92.00" cy="280.00" r="3.5"><title>2026-08-27: 0 commits</title></circle>
 <circle cx="117.59" cy="280.00" r="3.5"><title>2026-08-28: 0 commits</title></circle>
 <circle cx="143.17" cy="280.00" r="3.5"><title>2026-08-29: 0 commits</title></circle>
@@ -99,7 +106,7 @@
 <circle cx="757.24" cy="280.00" r="3.5"><title>2026-09-22: 0 commits</title></circle>
 <circle cx="782.83" cy="280.00" r="3.5"><title>2026-09-23: 0 commits</title></circle>
 <circle cx="808.41" cy="280.00" r="3.5"><title>2026-09-24: 0 commits</title></circle>
-<circle cx="834.00" cy="280.00" r="3.5"><title>2026-09-25: 0 commits</title></circle>
+<circle cx="834.00" cy="238.80" r="3.5"><title>2026-09-25: 1 commits</title></circle>
   <text x="92.00" y="303" class="axis-label">27</text>
 <text x="117.59" y="303" class="axis-label">28</text>
 <text x="143.17" y="303" class="axis-label">29</text>
