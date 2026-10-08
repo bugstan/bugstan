@@ -19,24 +19,24 @@
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="140.29" height="10" fill="#3178c6" />
-<rect x="140.29" y="0" width="131.74" height="10" fill="#4F5D95" />
-<rect x="272.03" y="0" width="48.67" height="10" fill="#00ADD8" />
-<rect x="320.70" y="0" width="47.80" height="10" fill="#A97BFF" />
-<rect x="368.50" y="0" width="21.68" height="10" fill="#b07219" />
-<rect x="390.18" y="0" width="20.28" height="10" fill="#dea584" />
-<rect x="410.46" y="0" width="14.80" height="10" fill="#8b949e" />
-<rect x="425.25" y="0" width="14.75" height="10" fill="#f1e05a" />
+      <rect x="0.00" y="0" width="140.25" height="10" fill="#3178c6" />
+<rect x="140.25" y="0" width="131.69" height="10" fill="#4F5D95" />
+<rect x="271.94" y="0" width="48.65" height="10" fill="#00ADD8" />
+<rect x="320.59" y="0" width="47.79" height="10" fill="#A97BFF" />
+<rect x="368.37" y="0" width="21.82" height="10" fill="#b07219" />
+<rect x="390.19" y="0" width="20.27" height="10" fill="#dea584" />
+<rect x="410.47" y="0" width="14.79" height="10" fill="#8b949e" />
+<rect x="425.26" y="0" width="14.74" height="10" fill="#f1e05a" />
     </g>
   </svg>
 
         <circle cx="28" cy="104" r="5" fill="#3178c6" />
         <text x="41" y="108" class="language">TypeScript</text>
-        <text x="216" y="108" class="percent">31.89%</text>
+        <text x="216" y="108" class="percent">31.87%</text>
 
         <circle cx="260" cy="104" r="5" fill="#4F5D95" />
         <text x="273" y="108" class="language">PHP</text>
-        <text x="448" y="108" class="percent">29.94%</text>
+        <text x="448" y="108" class="percent">29.93%</text>
 
         <circle cx="28" cy="130" r="5" fill="#00ADD8" />
         <text x="41" y="134" class="language">Go</text>
@@ -48,7 +48,7 @@
 
         <circle cx="28" cy="156" r="5" fill="#b07219" />
         <text x="41" y="160" class="language">Java</text>
-        <text x="216" y="160" class="percent">4.93%</text>
+        <text x="216" y="160" class="percent">4.96%</text>
 
         <circle cx="260" cy="156" r="5" fill="#dea584" />
         <text x="273" y="160" class="language">Rust</text>
