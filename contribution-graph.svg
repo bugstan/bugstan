@@ -24,45 +24,45 @@
   </style>
   <rect x="30" y="24" width="838" height="312" class="panel" />
   <text x="449" y="54" class="title" text-anchor="middle">bugstan Public Contribution Graph</text>
-  <text x="449" y="331" class="summary" text-anchor="middle">452 commits · 20 public source repositories · bugstan + n2ns</text>
+  <text x="449" y="331" class="summary" text-anchor="middle">356 commits · 20 public source repositories · bugstan + n2ns</text>
   <text x="53" y="178" class="axis-title" text-anchor="middle" transform="rotate(-90 53 178)">Contributions</text>
   <text x="463" y="316" class="axis-title" text-anchor="middle">Days</text>
   
       <line x1="92" y1="280.00" x2="834" y2="280.00" class="grid" />
       <text x="84" y="284.00" class="axis-label y-label">0</text>
 
-      <line x1="92" y1="262.34" x2="834" y2="262.34" class="grid" />
-      <text x="84" y="266.34" class="axis-label y-label">9</text>
+      <line x1="92" y1="261.98" x2="834" y2="261.98" class="grid" />
+      <text x="84" y="265.98" class="axis-label y-label">7</text>
 
-      <line x1="92" y1="244.69" x2="834" y2="244.69" class="grid" />
-      <text x="84" y="248.69" class="axis-label y-label">18</text>
+      <line x1="92" y1="243.95" x2="834" y2="243.95" class="grid" />
+      <text x="84" y="247.95" class="axis-label y-label">14</text>
 
-      <line x1="92" y1="227.03" x2="834" y2="227.03" class="grid" />
-      <text x="84" y="231.03" class="axis-label y-label">27</text>
+      <line x1="92" y1="225.93" x2="834" y2="225.93" class="grid" />
+      <text x="84" y="229.93" class="axis-label y-label">21</text>
 
-      <line x1="92" y1="209.37" x2="834" y2="209.37" class="grid" />
-      <text x="84" y="213.37" class="axis-label y-label">36</text>
+      <line x1="92" y1="207.90" x2="834" y2="207.90" class="grid" />
+      <text x="84" y="211.90" class="axis-label y-label">28</text>
 
-      <line x1="92" y1="191.71" x2="834" y2="191.71" class="grid" />
-      <text x="84" y="195.71" class="axis-label y-label">45</text>
+      <line x1="92" y1="189.88" x2="834" y2="189.88" class="grid" />
+      <text x="84" y="193.88" class="axis-label y-label">35</text>
 
-      <line x1="92" y1="174.06" x2="834" y2="174.06" class="grid" />
-      <text x="84" y="178.06" class="axis-label y-label">54</text>
+      <line x1="92" y1="171.85" x2="834" y2="171.85" class="grid" />
+      <text x="84" y="175.85" class="axis-label y-label">42</text>
 
-      <line x1="92" y1="156.40" x2="834" y2="156.40" class="grid" />
-      <text x="84" y="160.40" class="axis-label y-label">63</text>
+      <line x1="92" y1="153.82" x2="834" y2="153.82" class="grid" />
+      <text x="84" y="157.82" class="axis-label y-label">49</text>
 
-      <line x1="92" y1="138.74" x2="834" y2="138.74" class="grid" />
-      <text x="84" y="142.74" class="axis-label y-label">72</text>
+      <line x1="92" y1="135.80" x2="834" y2="135.80" class="grid" />
+      <text x="84" y="139.80" class="axis-label y-label">56</text>
 
-      <line x1="92" y1="121.09" x2="834" y2="121.09" class="grid" />
-      <text x="84" y="125.09" class="axis-label y-label">81</text>
+      <line x1="92" y1="117.78" x2="834" y2="117.78" class="grid" />
+      <text x="84" y="121.78" class="axis-label y-label">63</text>
 
-      <line x1="92" y1="103.43" x2="834" y2="103.43" class="grid" />
-      <text x="84" y="107.43" class="axis-label y-label">90</text>
+      <line x1="92" y1="99.75" x2="834" y2="99.75" class="grid" />
+      <text x="84" y="103.75" class="axis-label y-label">70</text>
 
-      <line x1="92" y1="85.77" x2="834" y2="85.77" class="grid" />
-      <text x="84" y="89.77" class="axis-label y-label">99</text>
+      <line x1="92" y1="81.72" x2="834" y2="81.72" class="grid" />
+      <text x="84" y="85.72" class="axis-label y-label">77</text>
   <line x1="92.00" y1="74" x2="92.00" y2="280" class="grid" />
 <line x1="117.59" y1="74" x2="117.59" y2="280" class="grid" />
 <line x1="143.17" y1="74" x2="143.17" y2="280" class="grid" />
@@ -93,66 +93,66 @@
 <line x1="782.83" y1="74" x2="782.83" y2="280" class="grid" />
 <line x1="808.41" y1="74" x2="808.41" y2="280" class="grid" />
 <line x1="834.00" y1="74" x2="834.00" y2="280" class="grid" />
-  <polygon points="92,280 92.00,75.96 117.59,193.68 143.17,130.90 168.76,262.34 194.34,223.10 219.93,230.95 245.52,219.18 271.10,280.00 296.69,280.00 322.28,280.00 347.86,272.15 373.45,254.50 399.03,280.00 424.62,280.00 450.21,280.00 475.79,280.00 501.38,280.00 526.97,280.00 552.55,262.34 578.14,240.76 603.72,213.30 629.31,280.00 654.90,280.00 680.48,236.84 706.07,268.23 731.66,258.42 757.24,280.00 782.83,280.00 808.41,250.57 834.00,280.00 834,280" class="area" />
-  <polyline points="92.00,75.96 117.59,193.68 143.17,130.90 168.76,262.34 194.34,223.10 219.93,230.95 245.52,219.18 271.10,280.00 296.69,280.00 322.28,280.00 347.86,272.15 373.45,254.50 399.03,280.00 424.62,280.00 450.21,280.00 475.79,280.00 501.38,280.00 526.97,280.00 552.55,262.34 578.14,240.76 603.72,213.30 629.31,280.00 654.90,280.00 680.48,236.84 706.07,268.23 731.66,258.42 757.24,280.00 782.83,280.00 808.41,250.57 834.00,280.00" class="line" />
-  <circle cx="92.00" cy="75.96" r="3.5"><title>2026-10-23: 104 commits</title></circle>
-<circle cx="117.59" cy="193.68" r="3.5"><title>2026-10-24: 44 commits</title></circle>
-<circle cx="143.17" cy="130.90" r="3.5"><title>2026-10-25: 76 commits</title></circle>
-<circle cx="168.76" cy="262.34" r="3.5"><title>2026-10-26: 9 commits</title></circle>
-<circle cx="194.34" cy="223.10" r="3.5"><title>2026-10-27: 29 commits</title></circle>
-<circle cx="219.93" cy="230.95" r="3.5"><title>2026-10-28: 25 commits</title></circle>
-<circle cx="245.52" cy="219.18" r="3.5"><title>2026-10-29: 31 commits</title></circle>
-<circle cx="271.10" cy="280.00" r="3.5"><title>2026-10-30: 0 commits</title></circle>
-<circle cx="296.69" cy="280.00" r="3.5"><title>2026-10-31: 0 commits</title></circle>
-<circle cx="322.28" cy="280.00" r="3.5"><title>2026-11-01: 0 commits</title></circle>
-<circle cx="347.86" cy="272.15" r="3.5"><title>2026-11-02: 4 commits</title></circle>
-<circle cx="373.45" cy="254.50" r="3.5"><title>2026-11-03: 13 commits</title></circle>
-<circle cx="399.03" cy="280.00" r="3.5"><title>2026-11-04: 0 commits</title></circle>
-<circle cx="424.62" cy="280.00" r="3.5"><title>2026-11-05: 0 commits</title></circle>
-<circle cx="450.21" cy="280.00" r="3.5"><title>2026-11-06: 0 commits</title></circle>
-<circle cx="475.79" cy="280.00" r="3.5"><title>2026-11-07: 0 commits</title></circle>
-<circle cx="501.38" cy="280.00" r="3.5"><title>2026-11-08: 0 commits</title></circle>
-<circle cx="526.97" cy="280.00" r="3.5"><title>2026-11-09: 0 commits</title></circle>
-<circle cx="552.55" cy="262.34" r="3.5"><title>2026-11-10: 9 commits</title></circle>
-<circle cx="578.14" cy="240.76" r="3.5"><title>2026-11-11: 20 commits</title></circle>
-<circle cx="603.72" cy="213.30" r="3.5"><title>2026-11-12: 34 commits</title></circle>
-<circle cx="629.31" cy="280.00" r="3.5"><title>2026-11-13: 0 commits</title></circle>
-<circle cx="654.90" cy="280.00" r="3.5"><title>2026-11-14: 0 commits</title></circle>
-<circle cx="680.48" cy="236.84" r="3.5"><title>2026-11-15: 22 commits</title></circle>
-<circle cx="706.07" cy="268.23" r="3.5"><title>2026-11-16: 6 commits</title></circle>
-<circle cx="731.66" cy="258.42" r="3.5"><title>2026-11-17: 11 commits</title></circle>
-<circle cx="757.24" cy="280.00" r="3.5"><title>2026-11-18: 0 commits</title></circle>
-<circle cx="782.83" cy="280.00" r="3.5"><title>2026-11-19: 0 commits</title></circle>
-<circle cx="808.41" cy="250.57" r="3.5"><title>2026-11-20: 15 commits</title></circle>
-<circle cx="834.00" cy="280.00" r="3.5"><title>2026-11-21: 0 commits</title></circle>
-  <text x="92.00" y="303" class="axis-label">23</text>
-<text x="117.59" y="303" class="axis-label">24</text>
-<text x="143.17" y="303" class="axis-label">25</text>
-<text x="168.76" y="303" class="axis-label">26</text>
-<text x="194.34" y="303" class="axis-label">27</text>
-<text x="219.93" y="303" class="axis-label">28</text>
-<text x="245.52" y="303" class="axis-label">29</text>
-<text x="271.10" y="303" class="axis-label">30</text>
-<text x="296.69" y="303" class="axis-label">31</text>
-<text x="322.28" y="303" class="axis-label">1</text>
-<text x="347.86" y="303" class="axis-label">2</text>
-<text x="373.45" y="303" class="axis-label">3</text>
-<text x="399.03" y="303" class="axis-label">4</text>
-<text x="424.62" y="303" class="axis-label">5</text>
-<text x="450.21" y="303" class="axis-label">6</text>
-<text x="475.79" y="303" class="axis-label">7</text>
-<text x="501.38" y="303" class="axis-label">8</text>
-<text x="526.97" y="303" class="axis-label">9</text>
-<text x="552.55" y="303" class="axis-label">10</text>
-<text x="578.14" y="303" class="axis-label">11</text>
-<text x="603.72" y="303" class="axis-label">12</text>
-<text x="629.31" y="303" class="axis-label">13</text>
-<text x="654.90" y="303" class="axis-label">14</text>
-<text x="680.48" y="303" class="axis-label">15</text>
-<text x="706.07" y="303" class="axis-label">16</text>
-<text x="731.66" y="303" class="axis-label">17</text>
-<text x="757.24" y="303" class="axis-label">18</text>
-<text x="782.83" y="303" class="axis-label">19</text>
-<text x="808.41" y="303" class="axis-label">20</text>
-<text x="834.00" y="303" class="axis-label">21</text>
+  <polygon points="92,280 92.00,166.70 117.59,84.30 143.17,256.82 168.76,205.32 194.34,215.63 219.93,200.18 245.52,280.00 271.10,280.00 296.69,280.00 322.28,269.70 347.86,246.53 373.45,280.00 399.03,280.00 424.62,280.00 450.21,280.00 475.79,280.00 501.38,280.00 526.97,256.82 552.55,228.50 578.14,192.45 603.72,280.00 629.31,280.00 654.90,223.35 680.48,264.55 706.07,251.68 731.66,280.00 757.24,280.00 782.83,241.38 808.41,259.40 834.00,280.00 834,280" class="area" />
+  <polyline points="92.00,166.70 117.59,84.30 143.17,256.82 168.76,205.32 194.34,215.63 219.93,200.18 245.52,280.00 271.10,280.00 296.69,280.00 322.28,269.70 347.86,246.53 373.45,280.00 399.03,280.00 424.62,280.00 450.21,280.00 475.79,280.00 501.38,280.00 526.97,256.82 552.55,228.50 578.14,192.45 603.72,280.00 629.31,280.00 654.90,223.35 680.48,264.55 706.07,251.68 731.66,280.00 757.24,280.00 782.83,241.38 808.41,259.40 834.00,280.00" class="line" />
+  <circle cx="92.00" cy="166.70" r="3.5"><title>2026-10-24: 44 commits</title></circle>
+<circle cx="117.59" cy="84.30" r="3.5"><title>2026-10-25: 76 commits</title></circle>
+<circle cx="143.17" cy="256.82" r="3.5"><title>2026-10-26: 9 commits</title></circle>
+<circle cx="168.76" cy="205.32" r="3.5"><title>2026-10-27: 29 commits</title></circle>
+<circle cx="194.34" cy="215.63" r="3.5"><title>2026-10-28: 25 commits</title></circle>
+<circle cx="219.93" cy="200.18" r="3.5"><title>2026-10-29: 31 commits</title></circle>
+<circle cx="245.52" cy="280.00" r="3.5"><title>2026-10-30: 0 commits</title></circle>
+<circle cx="271.10" cy="280.00" r="3.5"><title>2026-10-31: 0 commits</title></circle>
+<circle cx="296.69" cy="280.00" r="3.5"><title>2026-11-01: 0 commits</title></circle>
+<circle cx="322.28" cy="269.70" r="3.5"><title>2026-11-02: 4 commits</title></circle>
+<circle cx="347.86" cy="246.53" r="3.5"><title>2026-11-03: 13 commits</title></circle>
+<circle cx="373.45" cy="280.00" r="3.5"><title>2026-11-04: 0 commits</title></circle>
+<circle cx="399.03" cy="280.00" r="3.5"><title>2026-11-05: 0 commits</title></circle>
+<circle cx="424.62" cy="280.00" r="3.5"><title>2026-11-06: 0 commits</title></circle>
+<circle cx="450.21" cy="280.00" r="3.5"><title>2026-11-07: 0 commits</title></circle>
+<circle cx="475.79" cy="280.00" r="3.5"><title>2026-11-08: 0 commits</title></circle>
+<circle cx="501.38" cy="280.00" r="3.5"><title>2026-11-09: 0 commits</title></circle>
+<circle cx="526.97" cy="256.82" r="3.5"><title>2026-11-10: 9 commits</title></circle>
+<circle cx="552.55" cy="228.50" r="3.5"><title>2026-11-11: 20 commits</title></circle>
+<circle cx="578.14" cy="192.45" r="3.5"><title>2026-11-12: 34 commits</title></circle>
+<circle cx="603.72" cy="280.00" r="3.5"><title>2026-11-13: 0 commits</title></circle>
+<circle cx="629.31" cy="280.00" r="3.5"><title>2026-11-14: 0 commits</title></circle>
+<circle cx="654.90" cy="223.35" r="3.5"><title>2026-11-15: 22 commits</title></circle>
+<circle cx="680.48" cy="264.55" r="3.5"><title>2026-11-16: 6 commits</title></circle>
+<circle cx="706.07" cy="251.68" r="3.5"><title>2026-11-17: 11 commits</title></circle>
+<circle cx="731.66" cy="280.00" r="3.5"><title>2026-11-18: 0 commits</title></circle>
+<circle cx="757.24" cy="280.00" r="3.5"><title>2026-11-19: 0 commits</title></circle>
+<circle cx="782.83" cy="241.38" r="3.5"><title>2026-11-20: 15 commits</title></circle>
+<circle cx="808.41" cy="259.40" r="3.5"><title>2026-11-21: 8 commits</title></circle>
+<circle cx="834.00" cy="280.00" r="3.5"><title>2026-11-22: 0 commits</title></circle>
+  <text x="92.00" y="303" class="axis-label">24</text>
+<text x="117.59" y="303" class="axis-label">25</text>
+<text x="143.17" y="303" class="axis-label">26</text>
+<text x="168.76" y="303" class="axis-label">27</text>
+<text x="194.34" y="303" class="axis-label">28</text>
+<text x="219.93" y="303" class="axis-label">29</text>
+<text x="245.52" y="303" class="axis-label">30</text>
+<text x="271.10" y="303" class="axis-label">31</text>
+<text x="296.69" y="303" class="axis-label">1</text>
+<text x="322.28" y="303" class="axis-label">2</text>
+<text x="347.86" y="303" class="axis-label">3</text>
+<text x="373.45" y="303" class="axis-label">4</text>
+<text x="399.03" y="303" class="axis-label">5</text>
+<text x="424.62" y="303" class="axis-label">6</text>
+<text x="450.21" y="303" class="axis-label">7</text>
+<text x="475.79" y="303" class="axis-label">8</text>
+<text x="501.38" y="303" class="axis-label">9</text>
+<text x="526.97" y="303" class="axis-label">10</text>
+<text x="552.55" y="303" class="axis-label">11</text>
+<text x="578.14" y="303" class="axis-label">12</text>
+<text x="603.72" y="303" class="axis-label">13</text>
+<text x="629.31" y="303" class="axis-label">14</text>
+<text x="654.90" y="303" class="axis-label">15</text>
+<text x="680.48" y="303" class="axis-label">16</text>
+<text x="706.07" y="303" class="axis-label">17</text>
+<text x="731.66" y="303" class="axis-label">18</text>
+<text x="757.24" y="303" class="axis-label">19</text>
+<text x="782.83" y="303" class="axis-label">20</text>
+<text x="808.41" y="303" class="axis-label">21</text>
+<text x="834.00" y="303" class="axis-label">22</text>
 </svg>
