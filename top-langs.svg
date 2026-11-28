@@ -19,28 +19,28 @@
   <svg x="20" y="68" width="440" height="10" viewBox="0 0 440 10">
     <clipPath id="bar-clip"><rect x="0" y="0" width="440" height="10" rx="5" /></clipPath>
     <g clip-path="url(#bar-clip)">
-      <rect x="0.00" y="0" width="144.43" height="10" fill="#4F5D95" />
-<rect x="144.43" y="0" width="142.22" height="10" fill="#3178c6" />
-<rect x="286.65" y="0" width="45.50" height="10" fill="#00ADD8" />
-<rect x="332.15" y="0" width="42.34" height="10" fill="#8b949e" />
-<rect x="374.50" y="0" width="29.27" height="10" fill="#A97BFF" />
-<rect x="403.77" y="0" width="14.08" height="10" fill="#b07219" />
-<rect x="417.84" y="0" width="11.15" height="10" fill="#8b949e" />
-<rect x="429.00" y="0" width="11.00" height="10" fill="#f1e05a" />
+      <rect x="0.00" y="0" width="144.37" height="10" fill="#4F5D95" />
+<rect x="144.37" y="0" width="142.37" height="10" fill="#3178c6" />
+<rect x="286.73" y="0" width="45.46" height="10" fill="#00ADD8" />
+<rect x="332.20" y="0" width="42.32" height="10" fill="#8b949e" />
+<rect x="374.51" y="0" width="29.24" height="10" fill="#A97BFF" />
+<rect x="403.76" y="0" width="14.07" height="10" fill="#b07219" />
+<rect x="417.82" y="0" width="11.14" height="10" fill="#8b949e" />
+<rect x="428.97" y="0" width="11.03" height="10" fill="#f1e05a" />
     </g>
   </svg>
 
         <circle cx="28" cy="104" r="5" fill="#4F5D95" />
         <text x="41" y="108" class="language">PHP</text>
-        <text x="216" y="108" class="percent">32.83%</text>
+        <text x="216" y="108" class="percent">32.81%</text>
 
         <circle cx="260" cy="104" r="5" fill="#3178c6" />
         <text x="273" y="108" class="language">TypeScript</text>
-        <text x="448" y="108" class="percent">32.32%</text>
+        <text x="448" y="108" class="percent">32.36%</text>
 
         <circle cx="28" cy="130" r="5" fill="#00ADD8" />
         <text x="41" y="134" class="language">Go</text>
-        <text x="216" y="134" class="percent">10.34%</text>
+        <text x="216" y="134" class="percent">10.33%</text>
 
         <circle cx="260" cy="130" r="5" fill="#8b949e" />
         <text x="273" y="134" class="language">Dart</text>
@@ -60,5 +60,5 @@
 
         <circle cx="260" cy="182" r="5" fill="#f1e05a" />
         <text x="273" y="186" class="language">JavaScript</text>
-        <text x="448" y="186" class="percent">2.50%</text>
+        <text x="448" y="186" class="percent">2.51%</text>
 </svg>
